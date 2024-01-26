@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/mlflow/testmlflow/mlruns/0/9316b41904f14d4fb4ccb75a3b43710b/artifacts
+end_time: 1704216555121
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9316b41904f14d4fb4ccb75a3b43710b
+run_name: shivering-sloth-178
+run_uuid: 9316b41904f14d4fb4ccb75a3b43710b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704216549140
+status: 3
+tags: []
+user_id: hp

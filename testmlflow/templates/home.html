@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Price Optimization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="/predict">
+        <h1>Total Price Prediction</h1>
+
+        <label for="quantity">Quantity:</label>
+        <input type="int" name="quantity" placeholder="Enter the value" required>
+
+        <label for="unit_price">Unit Price:</label>
+        <input type="float" name="unit_price" step="0.01" placeholder="Enter the value" required>
+
+        <label for="comp_price_ratio">Competitor Price Ratio:</label>
+        <input type="float" name="comp_price_ratio"  placeholder="Enter the value" required>
+
+        <label for="product_score">Product Score:</label>
+        <input type="float" name="product_score" placeholder="Enter the value" required>
+
+        <label for="comp_promotions">Comp_1:</label>
+        <input type="float" name="comp_promotions" placeholder="Enter the value" required>
+        <button type="submit">Predict Total Price</button>
+    <p>Total price is {{ result }}</p>
+</body>
+</html>

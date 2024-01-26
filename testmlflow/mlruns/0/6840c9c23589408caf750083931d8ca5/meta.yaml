@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/mlflow/testmlflow/mlruns/0/6840c9c23589408caf750083931d8ca5/artifacts
+end_time: 1704217092493
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6840c9c23589408caf750083931d8ca5
+run_name: worried-fowl-148
+run_uuid: 6840c9c23589408caf750083931d8ca5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704217086975
+status: 3
+tags: []
+user_id: hp
